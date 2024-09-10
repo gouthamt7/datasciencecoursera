@@ -1,5 +1,5 @@
 ## Getting_and_Cleaning_Data Project- Samsung Galaxy S Smartphone Accelerometer Data Analysis
-
+Author: Goutham Tanjavuru <br />
 ## Goal of the project 
 This project analyzes data collected from the accelerometers of the Samsung Galaxy S smartphone. 
 The goal is to prepare:
