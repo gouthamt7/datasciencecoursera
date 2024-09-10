@@ -15,8 +15,8 @@ Goal | Item | Link to Item
 Analysis R Script |  run_analysis.R |  [R Script Link](https://github.com/gouthamt7/datasciencecoursera/blob/Master/3_Getting_and_Cleaning_Data/projects/run_analysis.R "run_analysis.R")
 Tidy Data Set |  Clean Data Set |  [Data Set Link](https://github.com/gouthamt7/datasciencecoursera/blob/Master/3_Getting_and_Cleaning_Data/data/tidy_data.txt "tidyData.txt")
 Github Repo | Repo |  [Repo Link](https://github.com/gouthamt7/datasciencecoursera/tree/Master/3_Getting_and_Cleaning_Data) "Click to go to Repo")
-Codebook | CodeBook.md |  [CodeBook Link](https://(github.com/gouthamt7/datasciencecoursera/blob/Master/3_Getting_and_Cleaning_Data/projects/CodeBook.md "CodeBook.md")
-README | ReadingItNow |  [Repo Link](https://github.com/gouthamt7/datasciencecoursera/edit/Master/3_Getting_and_Cleaning_Data/projects/README.md "README.md")
+Codebook | CodeBook.md |  [CodeBook Link](https://github.com/gouthamt7/datasciencecoursera/blob/Master/3_Getting_and_Cleaning_Data/projects/CodeBook.md "CodeBook.md")
+README | ReadingItNow |  [ReadMe Link](https://github.com/gouthamt7/datasciencecoursera/blob/Master/3_Getting_and_Cleaning_Data/projects/README.md "README.md")
 
 ## Script: run_analysis.R
 
