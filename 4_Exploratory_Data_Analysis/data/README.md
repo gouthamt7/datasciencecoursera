@@ -39,6 +39,7 @@ hist(data_subset$Global_active_power, col = "red",
 dev.off()
 
 ```
+![](https://github.com/gouthamt7/datasciencecoursera/blob/Master/4_Exploratory_Data_Analysis/projects/plot1.png)
 ```R
 # Load required libraries
 library(data.table)
@@ -72,6 +73,7 @@ plot(data_subset$DateTime, data_subset$Global_active_power,
 dev.off()
 
 ```
+![](https://github.com/gouthamt7/datasciencecoursera/blob/Master/4_Exploratory_Data_Analysis/projects/plot2.png)
 
 ```R
 # Load required libraries
@@ -110,6 +112,8 @@ legend("topright", col = c("black", "red", "blue"),
 dev.off()
 
 ```
+![](https://github.com/gouthamt7/datasciencecoursera/blob/Master/4_Exploratory_Data_Analysis/projects/plot3.png)
+
 ```R
 # Load required libraries
 library(data.table)
@@ -165,5 +169,4 @@ plot(data_subset$DateTime, data_subset$Global_reactive_power,
 dev.off()
 
 ```
-
-
+![](https://github.com/gouthamt7/datasciencecoursera/blob/Master/4_Exploratory_Data_Analysis/projects/plot4.png)
