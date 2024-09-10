@@ -39,6 +39,8 @@ hist(data_subset$Global_active_power, col = "red",
 dev.off()
 
 ```
+![](https://github.com/goutham7/datasciencecoursera/blob/master/4_Exploratory_Data_Analysis/project/plot1.png)
+
 ```R
 # Load required libraries
 library(data.table)
