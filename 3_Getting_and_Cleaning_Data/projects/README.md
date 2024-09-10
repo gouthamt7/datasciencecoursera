@@ -1,7 +1,12 @@
-## R Markdown
-##Getting_and_Cleaning_Data Project- Samsung Galaxy S Smartphone Accelerometer Data Analysis
+## Getting_and_Cleaning_Data Project- Samsung Galaxy S Smartphone Accelerometer Data Analysis
+
 ## Goal of the project 
-This project analyzes data collected from the accelerometers of the Samsung Galaxy S smartphone. The goal is to prepare a tidy data set that can be used for later analysis.
+This project analyzes data collected from the accelerometers of the Samsung Galaxy S smartphone. 
+The goal is to prepare:
+1. A tidy data set that can be used for later analysis.
+2. A link to a Github repository with your script for performing the analysis 
+3. A code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md. You should also include a README.md in the repo with your scripts. This repo explains how all of the scripts work and how they are connected.
+4. Analysis R Script
 
 ## Review Criteria
 
@@ -49,14 +54,11 @@ The `run_analysis.R` script performs the following steps:
 8. **Write the tidy data to a file**
    - Outputs the final tidy data set to "tidy_data.txt"
 
-## How to use the script
-
-1. Ensure we have R installed on our system.
-2. Set your working directory to the location of the script.
-3. Run the script in R or RStudio:
-   ```r
-   source("run_analysis.R")
-## R Markdown
+9. **How to use the script**
+   
+   1. Ensure we have R installed on our system.
+   2. Set your working directory to the location of the script.
+   3. Run the script in R or RStudio: source("run_analysis.R")
 
 
 
