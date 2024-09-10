@@ -40,7 +40,6 @@ dev.off()
 
 ```
 ![](https://github.com/goutham7/datasciencecoursera/blob/master/4_Exploratory_Data_Analysis/projects/plot1.png)
-
 ```R
 # Load required libraries
 library(data.table)
