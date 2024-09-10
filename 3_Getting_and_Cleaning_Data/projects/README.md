@@ -1,0 +1,62 @@
+## R Markdown
+##Getting_and_Cleaning_Data Project- Samsung Galaxy S Smartphone Accelerometer Data Analysis
+## Goal of the project 
+This project analyzes data collected from the accelerometers of the Samsung Galaxy S smartphone. The goal is to prepare a tidy data set that can be used for later analysis.
+
+## Review Criteria
+
+Goal | Item | Link to Item
+--- | --- | ---
+Analysis R Script |  run_analysis.R |  [R Script Link](https://github.com/mGalarnyk/datasciencecoursera/blob/master/3_Getting_and_Cleaning_Data/projects/run_analysis.R "run_analysis.R")
+Tidy Data Set |  Clean Data Set |  [Data Set Link](https://github.com/mGalarnyk/datasciencecoursera/blob/master/3_Getting_and_Cleaning_Data/data/tidyData.txt "tidyData.txt")
+Github Repo | Repo |  [Repo Link](https://github.com/mGalarnyk/datasciencecoursera/tree/master/3_Getting_and_Cleaning_Data "Click to go to Repo")
+Cookbook | CodeBook.md |  [Repo Link](https://github.com/mGalarnyk/datasciencecoursera/blob/master/3_Getting_and_Cleaning_Data/projects/CodeBook.md "CodeBook.md")
+README | ReadingItNow |  [Repo Link](https://github.com/mGalarnyk/datasciencecoursera/blob/master/3_Getting_and_Cleaning_Data/projects/README.md "README.md")
+
+## Script: run_analysis.R
+
+The `run_analysis.R` script performs the following steps:
+
+1. **Download and unzip the data**
+   - Checks if the data directory exists
+   - If not, downloads and unzips the data
+  
+2. **Read in the data files**
+   - Loads features and activity labels
+   - Reads training and test data sets
+
+3. **Merge the training and test sets**
+   - Combines X, Y, and subject data for both training and test sets
+
+4. **Extract mean and standard deviation measurements**
+   - Selects only the measurements on mean and standard deviation
+
+5. **Use descriptive activity names**
+   - Replaces activity codes with descriptive names
+
+6. **Label the data set with descriptive variable names**
+   - Cleans up variable names to be more descriptive
+
+7. **Create a tidy data set with averages**
+   - Groups the data by subject and activity
+   - Calculates the average of each variable for each activity and subject
+   -  To ensure your submitted data set is tidy, you should check that it  
+   -  follows these key principles of tidy data:
+   -  a)Each variable forms a column
+   -  b)Each observation forms a row
+   -  c)Each type of observational unit forms a table
+
+8. **Write the tidy data to a file**
+   - Outputs the final tidy data set to "tidy_data.txt"
+
+## How to use the script
+
+1. Ensure we have R installed on our system.
+2. Set your working directory to the location of the script.
+3. Run the script in R or RStudio:
+   ```r
+   source("run_analysis.R")
+## R Markdown
+
+
+
