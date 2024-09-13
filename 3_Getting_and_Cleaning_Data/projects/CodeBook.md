@@ -1,6 +1,6 @@
 # CodeBook for Getting and Cleaning Data Project:
 # Samsung Galaxy S Smartphone Accelerometer Data Analysis
-Author: Goutham Tanjavuru <br />
+Goutham Tanjavuru <br />
 
 ## Data Source
 The data for this project comes from the Human Activity Recognition Using Smartphones Dataset:
