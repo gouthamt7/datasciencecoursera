@@ -1,6 +1,6 @@
 #This project analyzes data collected from the accelerometers of the Samsung Galaxy S smartphone. 
 #The goal is to prepare a tidy data set that can be used for later analysis.
-# Author: Goutham Tanjavuru
+# Goutham Tanjavuru
 
 library(dplyr)
 library(tidyr)
