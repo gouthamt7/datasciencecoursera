@@ -1,0 +1,82 @@
+---
+title: "Machine Learning Prediction Assignment Writeup"
+output:
+  html_document: default
+  pdf_document: default
+editor_options:
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+Introduction
+The goal of this project is to predict the manner in which participants performed barbell lifts, represented by the "classe" variable in the training dataset. We'll use data from accelerometers on the belt, forearm, arm, and dumbell of 6 participants to build our prediction model.:
+
+```{r , echo=TRUE}
+# Load required libraries
+library(caret)
+library(randomForest)
+
+# Load the data
+training <- read.csv("https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv")
+testing <- read.csv("https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv")
+
+# Remove near zero variance predictors
+nzv <- nearZeroVar(training)
+training <- training[, -nzv]
+testing <- testing[, -nzv]
+
+# Remove columns with more than 95% NA values
+na_cols <- sapply(training, function(x) mean(is.na(x))) > 0.95
+training <- training[, !na_cols]
+testing <- testing[, !na_cols]
+
+# Remove irrelevant columns (first 7 columns)
+training <- training[, -(1:7)]
+testing <- testing[, -(1:7)]
+
+# Ensure 'classe' is a factor
+training$classe <- as.factor(training$classe)
+```
+
+# Model Building
+We'll use Random Forest for our prediction model due to its high accuracy and ability to handle complex interactions between features.
+
+```{r, echo=TRUE}
+# Set seed for reproducibility
+set.seed(123)
+
+# Split training data into training and validation sets
+inTrain <- createDataPartition(training$classe, p = 0.7, list = FALSE)
+train_set <- training[inTrain, ]
+val_set <- training[-inTrain, ]
+
+# Train Random Forest model
+rf_model <- randomForest(classe ~ ., data = train_set, ntree = 500)
+```
+
+#MODEL EVALUATION
+```{r, echo=TRUE}
+# Make predictions on validation set
+val_pred <- predict(rf_model, val_set)
+
+# Calculate accuracy
+accuracy <- confusionMatrix(val_pred, val_set$classe)$overall['Accuracy']
+print(paste("Validation Accuracy:", round(accuracy, 4)))
+
+# Calculate out-of-sample error estimate
+oos_error <- 1 - accuracy
+print(paste("Estimated Out-of-Sample Error:", round(oos_error, 4)))
+
+```
+#Predicting 20 test cases
+```{r}
+# Make predictions on the 20 test cases
+test_pred <- predict(rf_model, testing)
+#print(test_pred)
+```
+
