@@ -73,7 +73,7 @@ oos_error <- 1 - accuracy
 print(paste("Estimated Out-of-Sample Error:", round(oos_error, 4)))
 
 ```
-#Predicting 20 test cases
+#Predicting 20 test cases, output in console and submitted accordingly
 ```{r}
 # Make predictions on the 20 test cases
 test_pred <- predict(rf_model, testing)
